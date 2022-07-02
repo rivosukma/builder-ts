@@ -1,7 +1,8 @@
 import React from "react";
+import { Props } from "../../pages/react";
 import useNavbar from "./useNavbar";
 
-interface INavbar {
+interface INavbar extends Props {
   menus: string[];
 }
 
@@ -18,10 +19,10 @@ const Navbar: React.FC<INavbar> = ({ menus }) => {
   }
 
   return (
-    <nav className="border-b border-slate-500 border-solid ">
+    <nav className="sticky top-0 bg-white flex items-center justify-center">
       <div className="navbar">
         <div className="navbar-start">
-          <a className="btn btn-ghost normal-case text-xl">BuildIn</a>
+          <a className="btn btn-ghost normal-case text-xl">Instant</a>
         </div>
 
         <div className="navbar-end">
