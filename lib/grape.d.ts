@@ -1,4 +1,4 @@
 declare module "grapesjs-preset-newsletter" {
-  let newsletter: any;
+  let newsletter: string;
   export = newsletter;
 }

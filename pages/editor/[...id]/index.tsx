@@ -5,7 +5,8 @@ import { grapeSettings } from "../../../lib/grape/index";
 
 const Editor: NextPage = () => {
   useEffect(() => {
-    grapesjs.init(grapeSettings);
+    const settings: any = grapeSettings;
+    grapesjs.init(settings);
   }, []);
 
   return <div id="gjs"></div>;

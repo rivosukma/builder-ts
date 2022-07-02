@@ -6,4 +6,10 @@ export const grapeSettings = {
   pluginOpts: {
     gjsPreset: {},
   },
+  blockManager: {
+    appendTo: "#block-editor",
+  },
+  panels: {
+    default: {},
+  },
 };
