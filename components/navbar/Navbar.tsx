@@ -19,7 +19,7 @@ const Navbar: React.FC<INavbar> = ({ menus }) => {
   }
 
   return (
-    <nav className="sticky top-0 bg-white flex items-center justify-center">
+    <nav className="sticky top-0 bg-white flex items-center justify-center z-10">
       <div className="navbar">
         <div className="navbar-start">
           <a className="btn btn-ghost normal-case text-xl">Instant</a>
