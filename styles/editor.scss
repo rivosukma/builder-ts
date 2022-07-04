@@ -1,0 +1,27 @@
+.gjs-cv-canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.gjs-pn-views-container {
+  display: none !important;
+}
+
+/* Theming */
+.gjs-one-bg {
+  background-color: hsl(var(--b1)) !important;
+}
+
+.gjs-two-color {
+  color: hsl(var(--nc)) !important;
+}
+
+.gjs-three-bg {
+  background-color: #1e8fe1 !important;
+  color: white;
+}
+
+.gjs-four-color,
+.gjs-four-color-h:hover {
+  color: hsl(var(--p)) !important;
+}

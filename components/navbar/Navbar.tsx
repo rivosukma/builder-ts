@@ -7,22 +7,16 @@ interface INavbar extends Props {
 }
 
 const Navbar: React.FC<INavbar> = ({ menus }) => {
-  const { todo } = useNavbar();
-
-  function mapMenu(menus: string[]) {
-    todo();
-    return menus.map((menu: string, i: number) => (
-      <li key={i}>
-        <a>{menu}</a>
-      </li>
-    ));
-  }
+  const { mapMenu } = useNavbar();
 
   return (
-    <nav className="sticky top-0 bg-white flex items-center justify-center">
-      <div className="navbar">
+    <div className="sticky top-0 bg-base-100 flex items-center justify-center z-10 h-14 border-b-2 border-base-300">
+      <nav className="navbar">
         <div className="navbar-start">
-          <a className="btn btn-ghost normal-case text-xl">Instant</a>
+          <input
+            className="input text-sm rounded py-2 h-auto w-full"
+            placeholder="Title..."
+          />
         </div>
 
         <div className="navbar-end">
@@ -38,8 +32,8 @@ const Navbar: React.FC<INavbar> = ({ menus }) => {
             </ul>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 export default Navbar;
