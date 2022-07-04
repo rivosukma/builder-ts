@@ -4,12 +4,18 @@ export const grapeSettings = {
   container: "#gjs",
   plugins: [gjsPreset],
   pluginOpts: {
-    gjsPreset: {},
+    [gjsPreset]: {},
   },
   blockManager: {
-    appendTo: "#block-editor",
+    appendTo: "#blocks-editor",
+  },
+  styleManager: {
+    appendTo: "#styles-editor",
+  },
+  layerManager: {
+    appendTo: "#layers-editor",
   },
   panels: {
-    default: {},
+    default: [],
   },
 };

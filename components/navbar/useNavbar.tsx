@@ -1,8 +1,11 @@
 const useNavbar = () => {
-  function todo() {
-    console.log("navbar data here");
-  }
+  const mapMenu = (menus: string[]) =>
+    menus.map((menu: string, i: number) => (
+      <li key={i}>
+        <a>{menu}</a>
+      </li>
+    ));
 
-  return { todo };
+  return { mapMenu };
 };
 export default useNavbar;

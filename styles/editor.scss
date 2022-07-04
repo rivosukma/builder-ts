@@ -9,10 +9,19 @@
 
 /* Theming */
 .gjs-one-bg {
-  background-color: #fff !important;
+  background-color: hsl(var(--b1)) !important;
+}
+
+.gjs-two-color {
+  color: hsl(var(--nc)) !important;
+}
+
+.gjs-three-bg {
+  background-color: #1e8fe1 !important;
+  color: white;
 }
 
 .gjs-four-color,
 .gjs-four-color-h:hover {
-  color: #66cc8a !important;
+  color: hsl(var(--p)) !important;
 }
